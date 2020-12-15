@@ -1,4 +1,6 @@
-
+.idea
+node_modules
+.idea/*
 java/.DS_Store
 java/functional/.DS_Store
 java/functional/src/.DS_Store
@@ -90,3 +92,15 @@ java/.mvn/wrapper/maven-wrapper.jar
 .idea/codeStyles/codeStyleConfig.xml
 .idea/aws.xml
 .idea/$PROJECT_FILE$
+.idea/compiler.xml
+.idea/libraries/Maven__org_projectlombok_lombok_1_18_16.xml
+.idea/saveactions_settings.xml
+.idea/sonarlint/issuestore/1/7/170db00bc4ddc7aabc22599b0a8579d8d654eb7e
+.idea/sonarlint/issuestore/3/2/32d98117b2dd826f1554a4f7ea8a7efabf201fbf
+.idea/sonarlint/issuestore/4/c/4c85c66e6f82061f357cf7a47a2b6edfdbc275cd
+.idea/sonarlint/issuestore/6/b/6b7187d409db516aee4566ba7ee21d428bf27c25
+.idea/sonarlint/issuestore/7/9/7902537e462a91dd76fa6146a6484faac7a6e4ff
+.idea/sonarlint/issuestore/9/2/92685bbcb1fd3615ef8eb089d0f937cb9d122b12
+.idea/sonarlint/issuestore/b/7/b79f815c392666bebb4370a5316a0bcfcedd4202
+.idea/sonarlint/issuestore/f/3/f34d7b86fcaf72b18523f6b591c33752062f61ce
+.idea/uiDesigner.xml

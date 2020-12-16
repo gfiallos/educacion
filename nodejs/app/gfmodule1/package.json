@@ -1,0 +1,11 @@
+{
+  "name": "gfmodule1",
+  "version": "1.0.0",
+  "description": "Cashing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "G.Fiallos",
+  "license": "ISC"
+}

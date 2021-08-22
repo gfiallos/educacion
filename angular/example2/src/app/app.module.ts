@@ -1,25 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { HttpClientModule } from '@angular/common/http';
-import { DataTablesModule } from "angular-datatables";
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VoteComponent } from './vote/vote.component';
-import { MovieDisplayComponent } from './movie-display/movie-display.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VoteComponent,
-    MovieDisplayComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DataTablesModule,
-    HttpClientModule
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,50 +16,14 @@
   Test
 </button>
 <div class="card-group">
-  <div class="card">
-    <img [src]="movies.data[0].img" class="card-img-top" style="width: 300px" />
+  <div class="card" *ngFor="let movie of movies.data; let i = index">
+    <img [src]="movie.img" class="card-img-top" style="width: 300px" />
     <div class="card-body">
-      <h5 class="card-title">{{ movies.data[0].name }}</h5>
+      <h5 class="card-title">{{ movie.name }}</h5>
       <p class="card-text">
-        {{ movies.data[0].description }}
+        {{ movie.description }}
       </p>
-      <button type="button" [class]="movies.data[0].voted" (click)="onVote(0)">
-        Vote
-      </button>
-    </div>
-  </div>
-  <div class="card">
-    <img [src]="movies.data[1].img" class="card-img-top" style="width: 300px" />
-    <div class="card-body">
-      <h5 class="card-title">{{ movies.data[1].name }}</h5>
-      <p class="card-text">
-        {{ movies.data[1].description }}
-      </p>
-      <button type="button" [class]="movies.data[1].voted" (click)="onVote(1)">
-        Vote
-      </button>
-    </div>
-  </div>
-  <div class="card">
-    <img [src]="movies.data[2].img" class="card-img-top" style="width: 300px" />
-    <div class="card-body">
-      <h5 class="card-title">{{ movies.data[2].name }}</h5>
-      <p class="card-text">
-        {{ movies.data[2].description }}
-      </p>
-      <button type="button" [class]="movies.data[2].voted" (click)="onVote(2)">
-        Vote
-      </button>
-    </div>
-  </div>
-  <div class="card">
-    <img [src]="movies.data[3].img" class="card-img-top" style="width: 300px" />
-    <div class="card-body">
-      <h5 class="card-title">{{ movies.data[3].name }}</h5>
-      <p class="card-text">
-        {{ movies.data[3].description }}
-      </p>
-      <button type="button" [class]="movies.data[3].voted" (click)="onVote(3)">
+      <button type="button" [class]="movie.voted" (click)="onVote(i)">
         Vote
       </button>
     </div>

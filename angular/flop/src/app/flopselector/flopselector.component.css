@@ -1,0 +1,7 @@
+.movie-selector{
+  cursor: pointer;
+}
+.movie-img{
+  width: 8rem;
+  height: auto;
+}

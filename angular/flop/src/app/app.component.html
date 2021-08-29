@@ -1,0 +1,22 @@
+<h4>Flopchooser</h4>
+
+<div style="margin-bottom: 2rem">
+  <p>Which movie has a lower IMDB rating?</p>
+  <div [class]="flops.resultType()" role="alert">
+    {{ flops.message }}
+  </div>
+  <button class="btn btn-primary" [style]="played()" (click)="flops.reset()">
+    Play Again
+  </button>
+</div>
+<div class="card-group">
+  <app-flopselector
+    [flop]="flops.getLeft()"
+    (selectFlop)="selectFlop($event)"
+  ></app-flopselector>
+  <app-flopselector
+    [flop]="flops.getRight()"
+    (selectFlop)="selectFlop($event)"
+  ></app-flopselector>
+</div>
+<router-outlet></router-outlet>

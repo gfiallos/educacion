@@ -29,7 +29,7 @@ export class FlopsService {
   getRight() {
     return this.data[this.rightIndex];
   }
-  check(selected:any) {
+  checkIsCorrect(selected:any) {
     if (this.message!=="") {
       return;
     }

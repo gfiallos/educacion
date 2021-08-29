@@ -19,6 +19,6 @@ export class AppComponent {
   }
   selectFlop(flop:any) {
     console.log("Selected", flop);
-    this.flops.check(flop);
+    this.flops.checkIsCorrect(flop);
   }
 }
